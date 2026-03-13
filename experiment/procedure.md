@@ -1,4 +1,3 @@
-## Getting Started
 
  click the  **"Start Simulation"** button to begin.
 
