@@ -1,1 +1,1 @@
-### Aim of the experiment
+The aim of this experiment is to apply an Unsupervised machine learning algorithm K-Means clustering to a dataset of wine characteristics and group wines into clusters based on their similarities.

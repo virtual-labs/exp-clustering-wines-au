@@ -2,35 +2,86 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What type of machine learning algorithm is K-Means Clustering?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Supervised learning",
+        "b": "Unsupervised learning",
+        "c": "Reinforcement learning",
+        "d": "Semi-supervised learning"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Supervised learning requires labeled data, which K-Means does not use.",
+        "b": "K-Means is unsupervised because it finds patterns in unlabeled data without prior group labels.",
+        "c": "Reinforcement learning involves an agent learning through trial and error.",
+        "d": "Semi-supervised learning uses a small amount of labeled data with a large amount of unlabeled data."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "What does the symbol 'K' represent in the K-Means algorithm?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "The number of data points",
+        "b": "The number of features",
+        "c": "The number of clusters to be formed",
+        "d": "The number of iterations"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "The number of data points is usually denoted by 'n'.",
+        "b": "The number of features is the dimensionality of the data.",
+        "c": "K specifically refers to the number of clusters (and centroids) you want the algorithm to find.",
+        "d": "Iterations are the number of times the algorithm repeats its steps."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is a 'Centroid' in K-Means clustering?",
+      "answers": {
+        "a": "The farthest point in a cluster",
+        "b": "A randomly selected data point",
+        "c": "The average position or 'center of gravity' of a cluster",
+        "d": "The total number of points in a cluster"
+      },
+      "explanations": {
+        "a": "The centroid is central, not the farthest point.",
+        "b": "While centroids can start as random points, they represent the mean of the cluster points.",
+        "c": "The centroid is the mathematical center (the mean) of all data points in a cluster.",
+        "d": "The cluster size is the count of points, not the centroid position."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Why is 'Standardization' (Z-Score) important before running K-Means?",
+      "answers": {
+        "a": "To reduce the number of data points",
+        "b": "To ensure every feature is measured on the same scale",
+        "c": "To increase the number of clusters",
+        "d": "To make the data points larger"
+      },
+      "explanations": {
+        "a": "Standardization doesn't change the number of points.",
+        "b": "Standardization prevents features with naturally large ranges from dominating the distance calculations.",
+        "c": "Standardization is independent of the choice of K.",
+        "d": "Standardization changes numerical values, not the physical size of points on a graph."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the 'Initialization' step in the K-Means process?",
+      "answers": {
+        "a": "Calculating the final WCSS",
+        "b": "Assigning points to the nearest centroid",
+        "c": "Setting the starting positions of the centroids",
+        "d": "Normalizing the dataset"
+      },
+      "explanations": {
+        "a": "WCSS is usually calculated after the algorithm runs or during evaluation.",
+        "b": "This is the Point Assignment step.",
+        "c": "Initialization is the very first step where starting centroids are placed on the graph.",
+        "d": "Normalization/Standardization is a preprocessing step, not initialization."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
