@@ -1,19 +1,6 @@
 
  click the  **"Start Simulation"** button to begin.
 
----
-
-#### Step 0: EDA & Feature Selection
-
-<img src="images/step1.png" alt="EDA and Feature Selection" width="600"/>
-
-Use the dropdown menus on the left to select **Feature X** and **Feature Y** (the two chemical properties you want to compare).
-
-Observe how the data points are distributed on the **scatter plot** on the right.
-
-Click **"Next Step"** at the bottom.
-
----
 
 #### Step 1: Data Preprocessing
 
@@ -25,7 +12,7 @@ Turning it on ensures that features with larger numbers don't unfairly dominate 
 
 Click **"Next Step"**.
 
----
+
 
 #### Step 2: Determine K (Number of Clusters)
 
@@ -39,7 +26,7 @@ Use the **"Number of Clusters (K)"** slider on the left to set your desired numb
 
 Click **"Next Step"**.
 
----
+
 
 #### Step 3: Centroid Initialization
 
@@ -55,7 +42,7 @@ Click directly on the **scatter plot** on the right to place your starting centr
 
 Once the centroids are placed, click **"Next Step"**.
 
----
+
 
 #### Step 4: Point Assignment
 
@@ -67,7 +54,7 @@ You will see the data points change color to match their **closest centroid**.
 
 Click **"Next Step"**.
 
----
+
 
 #### Step 5: Centroid Update
 
@@ -79,7 +66,7 @@ Watch the larger centroid markers move to the **exact center of their newly assi
 
 Click **"Next Step"**.
 
----
+
 
 #### Step 6: Iterate
 
@@ -91,7 +78,7 @@ The app will automatically repeat the **assignment and update steps** until the 
 
 Wait a few seconds for it to finish.
 
----
+
 
 #### Step 7: Results
 
