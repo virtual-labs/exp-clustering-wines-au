@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "When is the K-Means algorithm said to have 'Converged'?",
+      "answers": {
+        "a": "When K reaches the maximum value",
+        "b": "When the centroids stop moving between iterations",
+        "c": "When all points belong to a single cluster",
+        "d": "After the first iteration"
+      },
+      "explanations": {
+        "a": "Convergence is about stability of the clusters, not the value of K.",
+        "b": "Convergence happens when no data points switch clusters and centroids remain in the same position.",
+        "c": "This would only happen if K=1, which is not the definition of convergence.",
+        "d": "The algorithm usually requires multiple iterations to find the best centroids."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What does WCSS (Within-Cluster Sum of Squares) measure?",
+      "answers": {
+        "a": "The distance between different clusters",
+        "b": "The total number of clusters",
+        "c": "How compact or 'tight' the clusters are",
+        "d": "The time taken for the algorithm to converge"
+      },
+      "explanations": {
+        "a": "WCSS measures internal cluster distance, not inter-cluster distance.",
+        "b": "WCSS is a mathematical score, not a count.",
+        "c": "A lower WCSS means data points are huddled closely around their centroids.",
+        "d": "WCSS is a spatial metric measuring quality, not execution time."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the primary purpose of the 'Elbow Method'?",
+      "answers": {
+        "a": "To calculate the silhouette score",
+        "b": "To help guess the optimal number for K",
+        "c": "To visualize the scatter plot",
+        "d": "To standardize the dataset"
+      },
+      "explanations": {
+        "a": "The Elbow Method uses WCSS, not Silhouette Score.",
+        "b": "The 'elbow' point on the WCSS-vs-K graph indicates the point where adding more clusters provides diminishing returns.",
+        "c": "It uses a line graph of WCSS, not a scatter plot of the data.",
+        "d": "Standardization is a prerequisite for clustering, not the goal of the Elbow Method."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What does a Silhouette Score near 1 indicate?",
+      "answers": {
+        "a": "The clusters are overlapping significantly",
+        "b": "The algorithm failed to reach convergence",
+        "c": "Excellent clustering where clusters are tight and well-separated",
+        "d": "The dataset contains too many features"
+      },
+      "explanations": {
+        "a": "A score near 0 indicates overlapping clusters.",
+        "b": "Silhouette score measures quality, not convergence.",
+        "c": "A score near 1 means clusters are distinct and points are very similar to their own cluster.",
+        "d": "Silhouette score measures cluster quality, not feature count."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "In the K-Means process, what happens during the 'Centroid Update' step?",
+      "answers": {
+        "a": "A new centroid is calculated as the average position of points in a group",
+        "b": "Points are assigned to the nearest centroid",
+        "c": "The value of K is increased by one",
+        "d": "The dataset is reshuffled randomly"
+      },
+      "explanations": {
+        "a": "The new centroid is found by calculating the mean (average) of all points currently assigned to that group.",
+        "b": "This describes the 'Point Assignment' step.",
+        "c": "The value of K remains constant throughout the algorithm's execution.",
+        "d": "Reshuffling is not part of the centroid update process."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    }
+  ]
+}
